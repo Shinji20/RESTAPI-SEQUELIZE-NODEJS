@@ -39,8 +39,8 @@ export const getTask = async (req, res) => {
 };
 
 export const updateTask = async (req, res) => {
+  const { id } = req.params;
   try {
-    const { id } = req.params;
     const task = await Task.findOne({
       where: { id },
     });

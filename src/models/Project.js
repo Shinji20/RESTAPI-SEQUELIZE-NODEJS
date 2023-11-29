@@ -21,7 +21,7 @@ export const Project = sequelize.define(
     },
   },
   {
-    timestamps: true,
+    timestamps: false,
   }
 );
 
